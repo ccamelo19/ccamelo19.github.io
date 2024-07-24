@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - amelie⭐️</title>
+    <style>
+        .alternate-color span:nth-child(odd) {
+            color: #0f479f;
+        }
+
+        .alternate-color span:nth-child(even) {
+            color: #ed2788;
+        }
+        .center-image{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body style="background-color: #000000">
+    <h1 style="font-family:'Cursive'; font-size: 110px; color: #ed2788;">amelie is my girlfriend :))) 💐🦢</h1>
+    <p class="alternate-color" style="font-family:'Cursive'; text-align: center;font-size: 60px;">I really like her !! She's sweet and loves tv girl 🙏</p>
+    <img src="images/amelie.jpg" alt="amelie" class="center-image"/>
+    <p class="alternate-color" style="font-family: 'Cursive'; text-align: center;font-size: 30px;"> Hi so here is some things you should know about amelie!</p>
+    <p class="alternate-color" style="font-family: 'Cursive'; text-align: center;font-size: 30px;">She loves TV GIRL !!!</p>
+    <img src="images/tvgirl.jpeg" alt="tvgirl" class="center-image"/>
+    <script> 
+        function applyAlternateColors() {
+            document.querySelectorAll('.alternate-color').forEach(element => {
+                const text = element.innerText;
+                element.innerHTML = '';
+                text.split('').forEach((char, index) => {
+                    const span = document.createElement('span');
+                    span.innerText = char;
+                    element.appendChild(span);
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', applyAlternateColors);
+    </script>
+</body>
+</html>
