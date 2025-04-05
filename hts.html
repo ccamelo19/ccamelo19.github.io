@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinton Camelo</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #111111;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            color: #111111;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Header Styles */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .site-tagline {
+            font-size: 0.9rem;
+            color: #636363;
+        }
+        
+        /* Navigation */
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #111111;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .main-nav a:hover {
+            background-color: #f0f0f0;
+        }
+        
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        /* Media Text Blocks */
+        .media-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin: 3rem 0;
+        }
+        
+        .media-text.has-media-on-right {
+            grid-template-areas: "content media";
+        }
+        
+        .media-text__content {
+            grid-area: content;
+        }
+        
+        .media-text__media {
+            grid-area: media;
+        }
+        
+        .media-text img {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* Pullquote */
+        .pullquote {
+            text-align: center;
+            padding: 3rem 0;
+            font-style: italic;
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+        
+        .pullquote cite {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-size: 0.9rem;
+        }
+        
+        /* Headings */
+        h1, h2, h3 {
+            font-family: 'Cardo', serif;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .media-text {
+                grid-template-columns: 1fr;
+                grid-template-areas: "media" "content";
+            }
+            
+            .site-header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .main-nav {
+                margin-top: 1rem;
+            }
+            
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="aro10.jpg" alt="Clinton Camleo">
+            <div>
+                <h1 class="site-title">Clinton Camelo</h1>
+                <p class="site-tagline">i try my best and i am still bad at maths, but worse at chem</p>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Category</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        
+        <section>
+            <h1 class="has-text-align-center"><strong>Welcome to<br>Clinton's Website!</strong></h1>
+            
+            <div style="height:20px" aria-hidden="true"></div>
+            
+            <p class="has-text-align-center" style="font-size:0.8rem"><strong>Bad Ideas, Avalibalefor free !</strong>
+        </section>
+        
+        <div class="media-text has-media-on-right">
+            <div class="media-text__content">
+                <p class="has-small-font-size">In 2023, I took part of a inter college research project.</p>
+            </div>
+            <div class="media-text__media">
+                <img src="iris.jpg" alt="Guanzhong's dissertation">
+            </div>
+        </div>
+        
+        <div class="media-text has-media-on-right">
+            <div class="media-text__content">
+                <p class="has-small-font-size">Recently, I have been playing senior rugby!</p>
+            </div>
+            <div class="media-text__media">
+                <img src="rugby.jpg" alt="Guanzhong's dissertation">
+            </div>
+        </div>
+
+
+        <div class="pullquote">
+            <blockquote>
+                <p>"May the winds of freedom carry you through the landscapes of numbers,<br>
+                where mathematics becomes a journey, not a boundary,<br>
+                and where connections spark the greatest discoveries."<br>
+                -Quote from Mac
+            
+            </p>
+            </blockquote>
+        </div>
+
+        <div class="media-text__content">
+            <img src="justdothings.jpg"Guanzhong's dissertation">
+        </div>
+
+    </main>
+</body>
+</html>
